@@ -3,4 +3,4 @@ altair
 ipykernel
 PyYAML
 nbformat
-nbclient
+nbclient 
