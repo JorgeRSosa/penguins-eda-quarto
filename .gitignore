@@ -4,5 +4,4 @@ quarto_env/
 env/
 .quarto/
 _site/
-*.html
 observacion.txt
