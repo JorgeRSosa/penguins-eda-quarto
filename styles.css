@@ -1,0 +1,105 @@
+/* ── Paleta corporativa ── */
+:root {
+  --corp-navy:   #1B2A4A;
+  --corp-blue:   #2563EB;
+  --corp-teal:   #0D9488;
+  --corp-slate:  #475569;
+  --corp-light:  #F1F5F9;
+  --corp-border: #CBD5E1;
+  --corp-accent: #F59E0B;
+}
+
+/* ── Estilos Generales ── */
+body { 
+  font-family: 'Segoe UI', system-ui, sans-serif; 
+  color: #1e293b; 
+  line-height: 1.5; 
+}
+
+/* ── Encabezado Reducido ── */
+#title-block-header {
+  background: linear-gradient(135deg, var(--corp-navy) 0%, #2e4a7a 100%);
+  /* Reducción de padding de 3.5rem a 1.5rem */
+  padding: 1.5rem 2rem; 
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid var(--corp-accent);
+}
+
+#title-block-header .title {
+  color: #FFFFFF !important;
+  /* Reducción de tamaño de fuente */
+  font-size: 1.8rem; 
+  font-weight: 700;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+  margin-bottom: 0.2rem;
+}
+
+#title-block-header .subtitle {
+  color: #BFDBFE !important;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ── Títulos ── */
+h1 { border-bottom: 3px solid var(--corp-blue); padding-bottom: 0.3rem; color: var(--corp-navy); }
+h2 { border-left: 5px solid var(--corp-teal); padding-left: 0.75rem; color: var(--corp-navy); }
+
+/* ── Formato de KPIs (Restaurado) ── */
+.kpi-grid { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+  margin: 1.5rem 0; 
+}
+
+.kpi-card {
+  flex: 1;
+  min-width: 180px;
+  background: white; 
+  border: 1px solid var(--corp-border); 
+  border-radius: 8px;
+  padding: 1rem; 
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.kpi-value { 
+  display: block;
+  font-size: 2rem; 
+  font-weight: 800; 
+  color: var(--corp-blue); 
+}
+
+.kpi-label { 
+  display: block;
+  font-size: 0.75rem; 
+  color: var(--corp-slate); 
+  text-transform: uppercase; 
+  font-weight: 700; 
+  margin-top: 0.25rem;
+}
+
+/* ── Insight Boxes ── */
+.insight-box {
+  background: linear-gradient(to right, #eff6ff, #f0fdf4);
+  border-left: 5px solid var(--corp-blue);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Hacer legibles los metadatos del autor y fecha sobre el fondo oscuro */
+#title-block-header .quarto-title-meta-heading, 
+#title-block-header .quarto-title-meta-contents,
+#title-block-header .author,
+#title-block-header .quarto-title-meta {
+  color: #D1D5DB !important; /* Gris muy claro/blanco azulado */
+  font-weight: 500;
+}
+
+#title-block-header .quarto-title-meta-heading {
+  color: #93C5FD !important; /* Azul más vibrante para la etiqueta "Author" */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}

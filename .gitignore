@@ -1,0 +1,8 @@
+.ipynb_checkpoints*/
+.venv/
+quarto_env/
+env/
+.quarto/
+_site/
+*.html
+observacion.txt
