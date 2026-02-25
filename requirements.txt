@@ -2,3 +2,5 @@ pandas
 altair
 ipykernel
 PyYAML
+nbformat
+nbclient
